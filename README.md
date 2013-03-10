@@ -6,7 +6,7 @@ An Arduino-enabled controller of an electric water heater.
 Why
 ---
 * We have an electric heater in the bathroom
-* It needs ca. 30 minutes to heat up
+* It needs ca. 50 minutes to heat up
 * We want hot water available when we wake up
 * We want to turn on the heater when we're not at home, via Internet
 * We want to know the temperature more precisely than the simple on/off of that red lamp
