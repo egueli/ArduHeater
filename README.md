@@ -56,3 +56,10 @@ In this repo you will find the Arduino sketch files needed to run the controller
 The main file is ArduinoDoesEverything.ino. It is called this way because initially I thought to split
 some functionality in the Arduino, and some other in the Wifi router. Then I managed to put almost everything in the
 Arduino's little RAM and flash.
+
+
+TODO
+====
+For this repo:
+* add schematic & hardware instructions
+* add license
