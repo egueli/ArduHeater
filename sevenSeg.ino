@@ -14,7 +14,11 @@ const unsigned long DISP_ALTERN_TIME = 2000;
 //#define SEVENSEG_DEBUG
 //#define SEVENSEG_SHOWMEM
 
-#define ISR_SERIAL 1000
+/*
+ * Warning: writing to serial in ISR may cause serial buffer
+ * overruns & a lockup. Print with care.
+ */
+//#define ISR_SERIAL 1000
 
 const byte DIGITS[] = {
   0b11111100,
