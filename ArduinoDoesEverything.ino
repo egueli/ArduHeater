@@ -63,7 +63,6 @@ void setup()
   relayControlSetup();
   scheduleSetup();
   pachubeSetup();
-//  moistureSetup();
 }
 
 void loop()
@@ -91,8 +90,6 @@ void loop()
 #endif
 
   pachubeLoop();
-  
-//  moistureLoop();
 }
 
 
