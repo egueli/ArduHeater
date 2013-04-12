@@ -19,8 +19,8 @@ EthernetUDP Udp;
 const int NTP_PACKET_SIZE= 48; // NTP time stamp is in the first 48 bytes of the message
 byte packetBuffer[ NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing packets 
 
-//const unsigned long TIME_ZONE_DIFFERENCE = 2 * 3600; // UTC+2 (Rome, w/ daylight savings)
-  const unsigned long TIME_ZONE_DIFFERENCE = 1 * 3600; // UTC+1 (Rome, w/out daylight savings)
+const unsigned long TIME_ZONE_DIFFERENCE = 2 * 3600; // UTC+2 (Rome, w/ daylight savings)
+//const unsigned long TIME_ZONE_DIFFERENCE = 1 * 3600; // UTC+1 (Rome, w/out daylight savings)
 
 const unsigned long NTP_QUERY_INTERVAL = 10 /* minutes */ *60*1000UL;
 
