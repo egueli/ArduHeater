@@ -73,7 +73,7 @@ void doOnceInADay(boolean* doneFlag, boolean heaterStatusToSet, int minutes) {
   if (!(*doneFlag) && nowM >= minutes) {
     Serial.print(F("Doing planned action at "));
     Serial.print(minutes);
-    Serial.println(" minutes since midnight");
+    Serial.println(F(" minutes since midnight"));
     turnHeater(heaterStatusToSet);
     *doneFlag = true;
   }
