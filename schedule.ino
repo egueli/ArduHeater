@@ -1,12 +1,7 @@
 #include <EEPROM.h>
 
-const int HOT_WATER_TEMP_H = 5000;
-const int COLD_WATER_TEMP_H = 1500;
 
 const int EEADDR_HEATER_LAST_STATE = 0;
-
-const int HEATING_BEGIN_MINS = 6 *60 + 00;
-const int HEATING_END_MINS   = 9 *60 + 00;
 
 boolean heatingBeginDone = false;
 boolean heatingEndDone = false;

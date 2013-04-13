@@ -1,0 +1,27 @@
+
+// This file contains user settings for ArduHeater.
+//
+// You can find usage instructions in the ArduHeater.ino file.
+
+
+// Your Cosm API key. Note: this is sensitive data.
+const char* APIKEY = "klsdhfsio48ytboir56s48o5sbtjoritusjole5i6usep5ot"; // this is a bunch of random letters that look like an API key
+
+// Your Cosm feed ID.
+const unsigned long FEEDID = 12345L;
+
+// The time zone the heater is living in.
+const unsigned long TIME_ZONE_DIFFERENCE = 2 * 3600; // UTC+2 (Rome, w/ daylight savings)
+
+
+// Every day, the heater will be turned on in the following range.
+const int HEATING_BEGIN_MINS = 6 *60 + 00;  // 6:00 AM
+const int HEATING_END_MINS   = 9 *60 + 00;  // 9:00 AM
+
+
+// The temperature of the water inside and outside the heating period above, respectively.
+const int HOT_WATER_TEMP_H  = 5000;         // 50°C
+const int COLD_WATER_TEMP_H = 1500;         // 15°C
+
+
+

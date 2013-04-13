@@ -2,8 +2,6 @@
 
 #include <string.h>
 
-const char* APIKEY = "THf6Qn5XsH17BmL3xiQu_tl5dWuSAKxGODJ1Nzh2MDkxMD0g";
-const unsigned long FEEDID = 53574L;
 const char* USERAGENT = "ArduHeater";
 
 EthernetClient pachubeClient;
