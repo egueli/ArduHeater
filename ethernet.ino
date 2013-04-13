@@ -1,7 +1,6 @@
 #if ENABLE_ETH
 
 
-#define STATIC_IP {192, 168, 2, 237}
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 

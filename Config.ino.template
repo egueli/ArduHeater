@@ -25,6 +25,11 @@ const int COLD_WATER_TEMP_H = 1500;         // 15°C
 
 
 
+// The static IP address of the Ethernet module.
+// If uncommented, the IP is assigned dynamically via
+// DHCP, but this will cost some RAM and Flash memory.
+#define STATIC_IP {192, 168, 2, 237}
+
 /******************
  * Hardware configuration
  ******************/
