@@ -1,14 +1,14 @@
 /*
  * ArduHeater - a programmable, Web-enabled heater controller
- * (C) Enrico Gueli 2012
+ * (C) Enrico Gueli 2013
  */
  
 /*
    Before compiling this sketch for the first time, do this:
 
-   1- edit the Config.info.template to suit your needs;
-   2- save as Config.ino (i.e. remove the .template extension)
-   3- close and reopen this sketch.
+   1- copy the Config.ino.template to Config.ino;
+   2- close and reopen this sketch in Arduino IDE.
+   2- In Arduino IDE, edit the Config to suit your needs;
    
    We need to do this because the constants in Config are not
    meant to be distributed freely (e.g. the Cosm API key), so
