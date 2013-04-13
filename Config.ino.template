@@ -14,8 +14,9 @@ const unsigned long FEEDID = 12345L;
 const unsigned long TIME_ZONE_DIFFERENCE = 2 * 3600; // UTC+2 (Rome, w/ daylight savings)
 
 
-// Every day, the heater will be turned on in the following range.
+// Every day, the heater will be turned on at this time.
 const int HEATING_BEGIN_MINS = 6 *60 + 00;  // 6:00 AM
+// Every day, the heater will be turned off at this time.
 const int HEATING_END_MINS   = 9 *60 + 00;  // 9:00 AM
 
 
@@ -29,6 +30,7 @@ const int COLD_WATER_TEMP_H = 1500;         // 15°C
 // If uncommented, the IP is assigned dynamically via
 // DHCP, but this will cost some RAM and Flash memory.
 #define STATIC_IP {192, 168, 2, 237}
+
 
 /******************
  * Hardware configuration
