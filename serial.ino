@@ -5,7 +5,7 @@
 
 void serialSetup() {
   Serial.begin(57600);  
-  Serial.println(F("*** ArduHeater, (C) 2012 Enrico Gueli <enrico.gueli@gmail.com> ***"));
+  Serial.println(F("*** ArduHeater, (C) 2013 Enrico Gueli <enrico.gueli@gmail.com> ***"));
   resetCmdBuf();
 }
 
