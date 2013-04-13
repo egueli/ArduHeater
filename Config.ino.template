@@ -36,6 +36,17 @@ const byte DS18S20_PIN = A0;
 // is connected.
 const byte RELAY_PIN = 2;
 
+// These pins control the shift register for the 7-seg display.
+// The board is an old project of mine called "PICtimer".
+// The schematic PDF is on this directory.
+// It has four common-cathode 7-seg displays, and only four pins
+// are needed to control them all (a fifth pin is needed to handle
+// the four onboard buttons).
+// The board originally contained a PIC16F84A mounted in a socket;
+// to be able to use it into ArduHeater, I removed the PIC and
+// connected the interesting pins to the Arduino.
+// The following table of constants, along with the side comments,
+// tells how to connect the Arduino to the PIC-less board.
 const byte SDATA_PIN = 7;   // to be connected to pin 9 (RB3) of IC1
 const byte SCLK_PIN = 3;    // to be connected to pin 8 (RB2) of IC1
 const byte RCLK_PIN = 6;    // to be connected to pin 7 (RB1) of IC1
@@ -43,6 +54,15 @@ const byte DRES_PIN = 5;    // to be connected to pin 10 (RB4) of IC1
 const byte KEYS_PIN = A2;   // to be connected to pin 17 (RA0) of IC1
 
 
+
+// The following constants can be used if you want to control an
+// HD44780-like display. The display I used was mounted in a board
+// called "Evoluzione 2000" that was going to be trashed. It had a
+// microcontroller mounted on a socket, and a simple D/A converter to
+// control the LCD contrast. The microcontroller was connected
+// directly to the LCD, and it had a "latch" pin to control the DAC.
+// I don't currently use any LCD, because 7-seg displays are easier
+// to read at long distance.
 
 const byte D7_PIN = 5;
 const byte D6_PIN = 7;
