@@ -3,11 +3,6 @@
 #include <TimerOne.h>
 #include <OneWire.h>
 
-#define SDATA 7
-#define SCLK 3
-#define RCLK 6
-#define DRES 5
-#define KEYS A2
 
 const unsigned long DISP_ALTERN_TIME = 2000;
 
@@ -55,19 +50,19 @@ void sevenSegISR() {
   switch(lastDigit) {
   case 0:
     sevenSegWrite(segments[1]);
-    strobe(RCLK);
+    strobe(RCLK_PIN);
     lastDigit++;
     break;
 
   case 1:
     sevenSegWrite(segments[2]);
-    strobe(RCLK);
+    strobe(RCLK_PIN);
     lastDigit++;
     break;
 
   case 2:
     sevenSegWrite(segments[3]);
-    strobe(RCLK);
+    strobe(RCLK_PIN);
     lastDigit++;
     break;
 
@@ -77,9 +72,9 @@ void sevenSegISR() {
 #else
     sevenSegWrite(segments[0]);
 #endif
-    strobe(RCLK);
+    strobe(RCLK_PIN);
 
-    strobe(DRES);
+    strobe(DRES_PIN);
     lastDigit = 0;
     break;
   }
@@ -115,8 +110,8 @@ void sevenSegISR() {
 
 void sevenSegWrite(unsigned char leds) {
   for (byte i=0; i<8; i++) {
-    digitalWrite(SDATA, leds & 1);
-    strobe(SCLK);
+    digitalWrite(SDATA_PIN, leds & 1);
+    strobe(SCLK_PIN);
     leds >>= 1;
   }  
 }
@@ -128,11 +123,11 @@ void strobe(unsigned char pin) {
 
 
 void sevenSegSetup() {
-  pinMode(SDATA, OUTPUT);
-  pinMode(SCLK, OUTPUT);
-  pinMode(RCLK, OUTPUT);
-  pinMode(DRES, OUTPUT);
-  pinMode(KEYS, INPUT);
+  pinMode(SDATA_PIN, OUTPUT);
+  pinMode(SCLK_PIN, OUTPUT);
+  pinMode(RCLK_PIN, OUTPUT);
+  pinMode(DRES_PIN, OUTPUT);
+  pinMode(KEYS_PIN, INPUT);
 
   Timer1.initialize(1000);
   Timer1.attachInterrupt(sevenSegISR);

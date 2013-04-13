@@ -1,6 +1,6 @@
 #include <OneWire.h>
 
-OneWire ds(A0);
+OneWire ds(DS18S20_PIN);
 
 const unsigned long MINIMUM_TIME_BETWEEN_TEMP_READINGS = 5000;
 

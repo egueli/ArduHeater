@@ -5,17 +5,6 @@
 
 //#define BIG_DISPLAY
 
-const byte DEFAULT_CONTRAST = 7;
-
-const byte D7_PIN = 5;
-const byte D6_PIN = 7;
-const byte D5_PIN = 3;
-const byte D4_PIN = 6;
-const byte RS_PIN = 8;
-const byte EN_PIN = 9;
-const byte KEYS_PIN = A2;
-const byte CONTRAST_PIN = A3;
-
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(RS_PIN, EN_PIN, D4_PIN, D5_PIN, D6_PIN, D7_PIN);
 

@@ -1,4 +1,3 @@
-const byte RELAY_PIN = 2;
 
 const int HYSTERESIS_H = 200;
 const int DEFAULT_TARGET_TEMPERATURE_H = 0;

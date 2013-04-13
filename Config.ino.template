@@ -25,3 +25,31 @@ const int COLD_WATER_TEMP_H = 1500;         // 15°C
 
 
 
+/******************
+ * Hardware configuration
+ ******************/
+
+// The pin where the DS18S20 sensor is connected.
+const byte DS18S20_PIN = A0;
+
+// The pin where the relay (which turns on and off the heater)
+// is connected.
+const byte RELAY_PIN = 2;
+
+const byte SDATA_PIN = 7;   // to be connected to pin 9 (RB3) of IC1
+const byte SCLK_PIN = 3;    // to be connected to pin 8 (RB2) of IC1
+const byte RCLK_PIN = 6;    // to be connected to pin 7 (RB1) of IC1
+const byte DRES_PIN = 5;    // to be connected to pin 10 (RB4) of IC1
+const byte KEYS_PIN = A2;   // to be connected to pin 17 (RA0) of IC1
+
+
+
+const byte D7_PIN = 5;
+const byte D6_PIN = 7;
+const byte D5_PIN = 3;
+const byte D4_PIN = 6;
+const byte RS_PIN = 8;
+const byte EN_PIN = 9;
+const byte CONTRAST_PIN = A3;
+
+const byte DEFAULT_CONTRAST = 7;
