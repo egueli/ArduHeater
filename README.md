@@ -62,4 +62,3 @@ TODO
 ====
 For this repo:
 * add schematic & hardware instructions
-* add license
